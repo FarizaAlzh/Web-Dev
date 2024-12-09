@@ -1,0 +1,112 @@
+package userSystem;
+
+import enums.IDType;
+import enums.Languages;
+
+/* методы этого класса 
+ 1) getFullName() - String 
+ 2) сhangePassword() - void
+ 3) changeLogin() - void 
+ 4) changeLanguage() - void  
+ 5) isLoggedIn() - boolean (вошел в систему/вышел)
+ 6) LogIn() - boolean (проверяет правильные ли данные)
+ 7) LogOut() - void (выход из системы)
+ */
+
+public abstract class User {
+	private String firstName;
+	private String lastName;
+	private String login;
+	private String password; 
+	private String email;
+	private final IDType id;
+	public Languages language;
+	private boolean isLoggedIn;
+	
+	
+	public User(String firstName, String lastName, String login, String password , String email, IDType id, Languages language, boolean isLoggedIn) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.login = login ;
+		this.password = password ;
+		this.email = email ;
+		this.id = id;
+		this.language = language;
+		this.isLoggedIn = false; 
+		
+		
+	}
+	//1 full name users
+	public String getFullName() {
+		return firstName + " " + lastName; 
+	}
+	//2 change password 
+		public void changePassword(String newPassword) {
+			this.password = newPassword;
+		}
+	//3 change login
+		public void changeLogin(String newLogin) {
+			this.login = newLogin; 
+		}
+	//4 change Language
+		public void changeLanguage(Languages newLanguage) {
+			this.language = newLanguage; 
+		}
+		
+	//5 isLoggedIn - поверяет вошел ли юзер в систему 
+		public boolean isLoggedIn() {
+			return isLoggedIn;
+		}
+		
+	//6 LogIn
+		public boolean LogIn(String inputLogin , String inputPassword) {
+			if(this.password.equals(inputPassword) && this.login.equals(inputLogin)) {
+				this.isLoggedIn = true; 
+				return true;
+		
+			}
+			return false; 
+		}
+		
+	//7 LogOut 
+		public void LogOut() {
+			this.isLoggedIn = false; 
+		}
+	
+	//8 sendMessage 
+		public abstract void sendMessage(String message);
+		
+	//геттеры и сеттеры 
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+
+	public String getPassword() {
+		return password;
+	}
+	public String getLogin() {
+		return login;
+	}
+	public IDType getId() {
+		return id;
+	}
+
+}
