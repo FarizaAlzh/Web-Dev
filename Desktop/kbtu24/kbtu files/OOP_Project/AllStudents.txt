@@ -1,0 +1,4 @@
+a_kaliyev:12345678:Alpamys:Kaliyev:23B01:18:18:SITE:IT:2:OSIT
+f_alzhan:12345678:Fariza:Alzhan:23B02:18:18:SITE:IT:2:OSIT
+m_altynbek:12345678:Maksat:Altynbek:23B03:18:18:SITE:IT:2:OSIT
+a_kazybek:12345678:Abylai:Kazybek:23B04:18:18:SITE:IT:2:OSIT

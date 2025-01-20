@@ -1,0 +1,3 @@
+23B01:Alpamys:HEY Asylzhan. Give us top 1:23B04
+23B01:Alpamys:Hello:23B04
+23B04:Fariza:Hello.How are ya:23B01
