@@ -1,0 +1,10 @@
+<div class="categories">
+    <button 
+        *ngFor="let category of categories" 
+        (click)="selectCategory(category)"
+        [class.active]="selectedCategory === category">
+        {{ category.name }}
+    </button>
+</div>
+
+<app-product-list *ngIf="selectedCategory" [products]="selectedCategory.products"></app-product-list>
