@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Qasynda</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+<header class="sticky-top bg-white shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-light container">
+    <a class="navbar-brand" href="#home">
+      <img src="photo/Qasynda.png" alt="Qasynda Logo" height="40" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="#home" data-lang="main">Главная</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about" data-lang="we">О нас</a></li>
+        <li class="nav-item"><a class="nav-link" href="#news" data-lang="news">Новости</a></li>
+        <li class="nav-item"><a class="nav-link" href="#jobs" data-lang="jobs">Виды подработки</a></li>
+        <li class="nav-item"><a class="nav-link" href="#team" data-lang="team">Основатели</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" data-lang="contacts">Контакты</a></li>
+      </ul>
+      <div class="d-flex ms-auto">
+        <button id="ru-btn" class="btn btn-outline-success me-2">RU</button>
+        <button id="en-btn" class="btn btn-outline-success">EN</button>
+      </div>
+    </div>
+  </nav>
+</header>
+<section id="home" class="hero">
+  <div class="container">
+    <h1 data-lang="hero-title">Найди подработку быстро и легко!</h1>
+    <p data-lang="hero-desc">Мы поможем тебе найти подработку по твоим навыкам и свободному времени. Оставь заявку и начни зарабатывать уже сегодня!</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTv93xOe7E3kJNwtyzeh2aqLcLH2rLIqQGeWedUB2RIL4uAw/viewform" class="btn btn-success btn-lg" data-lang="cta">Оставить заявку</a>
+  </div>
+</section>
+<section id="about" class="about">
+  <div class="container">
+    <h2 data-lang="about-title" class="mb-4 text-center">О нас</h2>
+    <p class="lead text-center mb-4" data-lang="about-desc-main">
+      <strong>Qasynda</strong> – это удобная платформа для быстрого поиска подработки. Мы помогаем людям находить простые задания рядом с собой и зарабатывать деньги, выполняя легкие и доступные задачи.
+    </p>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-3">
+      <div class="col">
+        <div class="about-card">
+          <i class="bi bi-search"></i>
+          <h5 class="card-title" data-lang="about-point1">Быстрый поиск</h5>
+          <p class="card-text" data-lang="about-desc1">Находите подработку рядом с собой.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="about-card">
+          <i class="bi bi-lightning-charge"></i>
+          <h5 class="card-title" data-lang="about-point2">Легкие задания</h5>
+          <p class="card-text" data-lang="about-desc2">Простые задачи без сложных навыков.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="about-card">
+          <i class="bi bi-clock"></i>
+          <h5 class="card-title" data-lang="about-point3">Свободный график</h5>
+          <p class="card-text" data-lang="about-desc3">Выбирайте удобное время для работы.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="about-card">
+          <i class="bi bi-wallet2"></i>
+          <h5 class="card-title" data-lang="about-point4">Моментальный заработок</h5>
+          <p class="card-text" data-lang="about-desc4">Выполняйте задания и сразу получайте оплату.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="jobs" class="jobs py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center" data-lang="jobs-title">Виды подработки</h2>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" data-lang="job1">🧹 Уборка – помощь по дому, вынос мусора</li>
+      <li class="list-group-item" data-lang="job2">🚚 Доставка – курьерские поручения, покупки</li>
+      <li class="list-group-item" data-lang="job3">🛠 Ремонт – починка техники, сборка мебели</li>
+      <li class="list-group-item" data-lang="job4">🐶 Помощь с питомцами – выгул собак, кормление</li>
+      <li class="list-group-item" data-lang="job5">📚 Учебная помощь – написание конспектов, репетиторство</li>
+    </ul>
+  </div>
+</section>
+<section id="team" class="team py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center" data-lang="team-title">Основатели</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <div class="col text-center">
+        <img src="photo/aidar.jpg" class="rounded-circle mb-3" alt="Aidar Issakhanov" width="150" height="150" />
+        <h5>Aidar Issakhanov</h5>
+        <p data-lang="team1">Вдохновитель Qasynda и человек…</p>
+      </div>
+      <div class="col text-center">
+        <img src="photo/dauirber.jpg" class="rounded-circle mb-3" alt="Dauirbek Zhumageldy" width="150" height="150" />
+        <h5>Dauirbek Zhumageldy</h5>
+        <p data-lang="team2">PR-Manager, мастер общения и продвижения…</p>
+      </div>
+      <div class="col text-center">
+        <img src="photo/fariza.jpg" class="rounded-circle mb-3" alt="Alzhan Fariza" width="150" height="150" />
+        <h5>Alzhan Fariza</h5>
+        <p data-lang="team3">Product-Manager, следит за удобством платформы…</p>
+      </div>
+      <div class="col text-center">
+        <img src="photo/zeinaddin.jpg" class="rounded-circle mb-3" alt="Zeinaddin Zurgambayev" width="150" height="150" />
+        <h5>Zeinaddin Zurgambayev</h5>
+        <p data-lang="team4">Software Engineer, превращает идеи в реальность…</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="contact py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-3" data-lang="contact-title">Свяжитесь с нами</h2>
+    <p>Email: <a href="mailto:isakhanovaidar@gmail.com">isakhanovaidar@gmail.com</a></p>
+    <p>Telegram: <a href="https://t.me/aidarissakhanov">@aidarissakhanov</a></p>
+  </div>
+</section>
+<footer class="text-center py-3 border-top">
+  <div class="container">
+    <small data-lang="footer-rights">© 2025 Qasynda. Все права защищены.</small><br />
+    <small data-lang="footer-address">Толе Би 59, Алматы, Казахстан</small>
+  </div>
+</footer>
+<script src="script_final.js"></script>
+</body>
+</html>

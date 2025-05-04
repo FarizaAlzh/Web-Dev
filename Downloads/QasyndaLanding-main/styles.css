@@ -1,0 +1,207 @@
+/* Общие стили */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #0c3057;
+    background-color: #fff;
+  }
+  
+  /* Навигация */
+  .navbar-brand img {
+    height: 40px;
+  }
+  .navbar-nav {
+    gap: 1rem;
+  }
+  .nav-link {
+    font-weight: 500;
+    color: #007bff;
+    transition: color 0.3s ease;
+    text-align: center;
+  }
+  .nav-link:hover {
+    color: #0056b3 !important;
+  }
+  
+  /* Кнопки переключения языка */
+  #ru-btn,
+  #en-btn {
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+    padding: 0.4rem 0.75rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  #ru-btn:hover,
+  #en-btn:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  #ru-btn.active,
+  #en-btn.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Hero секция */
+  .hero {
+    background-color: #e9f5ff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 3rem 1rem;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  .hero p {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+  }
+  
+  /* О нас */
+  .about {
+    padding: 4rem 0;
+    background-color: #fff;
+  }
+  .about h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .about-card {
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9f9f9;
+  }
+  .about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  .about-card i {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+  }
+  
+  /* Подработки */
+  .jobs {
+    background-color: #f5fbff;
+    padding: 4rem 0;
+  }
+  .jobs h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .jobs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 720px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  .jobs li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 1.05rem;
+    background-color: #fff;
+  }
+  .jobs li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Команда */
+  .team {
+    background-color: #fff;
+    padding: 4rem 0;
+  }
+  .team h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .team img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #e0f7fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+  }
+  
+  /* Контакты */
+  .contact {
+    background-color: #e9f5ff;
+    padding: 4rem 0;
+    text-align: center;
+  }
+  .contact h2 {
+    margin-bottom: 2rem;
+  }
+  
+  /* Футер */
+  footer {
+    background-color: #004080;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+  }
+  footer small {
+    display: block;
+  }
+  
+  /* Новости */
+  .news {
+    padding: 4rem 0;
+  }
+  .news h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .news-item {
+    margin-bottom: 2rem;
+  }
+  .news-item img {
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+    .hero p {
+      font-size: 1rem;
+    }
+    .about-card {
+      padding: 1.5rem;
+    }
+    .jobs li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .navbar-nav {
+      text-align: center;
+    }
+  }
+  
